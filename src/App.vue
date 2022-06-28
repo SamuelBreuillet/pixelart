@@ -42,11 +42,9 @@ export default {
     },
     methods: {
         applyColor(n) {
-            console.log(this.selectedColor)
             this.$refs.pixel[n].setColor(this.selectedColor)
         },
         setSelectedColor(color) {
-            console.log(color)
             this.selectedColor = color
         }
     },

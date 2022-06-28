@@ -26,7 +26,6 @@ export default {
     },
     methods: {
         setColor(color) {
-            console.log(color)
             this.color = color
             this.updateCounter++
         },

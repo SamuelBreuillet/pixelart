@@ -16,7 +16,6 @@
                 :key="n"
                 :selected-color="selectedColor"
                 :default-color="defaultColor"
-                ref="pixel"
             ></Pixel>
         </div>
     </div>
@@ -41,9 +40,6 @@ export default {
         this.selectedColor = this.colors[0]
     },
     methods: {
-        applyColor(n) {
-            this.$refs.pixel[n].setColor(this.selectedColor)
-        },
         setSelectedColor(color) {
             this.selectedColor = color
         }
